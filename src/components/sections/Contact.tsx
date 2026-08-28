@@ -23,7 +23,7 @@ export function Contact() {
         <Reveal className="mb-16 text-center">
           <Eyebrow withLines className="justify-center">Contact</Eyebrow>
           <h2 className="mt-6 font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
-            Let&apos;s Talk <span className="italic text-gold-600">Hospitality</span>
+            Let&apos;s Talk About Your <span className="italic text-gold-600">Property</span>
           </h2>
         </Reveal>
 
@@ -35,9 +35,9 @@ export function Contact() {
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gold-500/15">
                   <Mail size={24} strokeWidth={1.5} className="text-gold-600" />
                 </div>
-                <h3 className="mt-6 font-serif text-2xl font-light text-espresso">Message Received</h3>
+                <h3 className="mt-6 font-serif text-2xl font-light text-espresso">Thanks for Reaching Out</h3>
                 <p className="mt-3 max-w-sm font-sans text-sm font-light leading-relaxed text-cream-800">
-                  Thank you for reaching out. Our partnerships team will respond within two business days.
+                  Thanks for getting in touch. Our team will review your message and get back to you shortly.
                 </p>
                 <button
                   onClick={() => {
@@ -46,7 +46,7 @@ export function Contact() {
                   }}
                   className="mt-8 text-[12px] font-medium uppercase tracking-[0.15em] text-espresso underline decoration-gold-500 underline-offset-4 transition-colors hover:text-gold-600"
                 >
-                  Send another message
+                  Send Another Message
                 </button>
               </div>
             ) : (
@@ -93,7 +93,7 @@ export function Contact() {
                     className="mt-2 w-full border-b border-cream-400 bg-transparent pb-3 font-sans text-sm text-espresso outline-none transition-colors focus:border-espresso"
                   >
                     <option value="" disabled>Select your property type</option>
-                    <option value="boutique-hotel">Boutique Hotel</option>
+                    <option value="boutique-hotel">Hotel</option>
                     <option value="resort">Resort</option>
                     <option value="villa-group">Villa Group</option>
                     <option value="serviced-apartments">Serviced Apartments</option>
@@ -112,7 +112,7 @@ export function Contact() {
                     value={form.message}
                     onChange={handleChange('message')}
                     className="mt-2 w-full resize-none border-b border-cream-400 bg-transparent pb-3 font-sans text-sm text-espresso outline-none transition-colors focus:border-espresso"
-                    placeholder="Tell us about your property and what you need…"
+                    placeholder="Tell us what you're looking for..."
                   />
                 </div>
 
@@ -130,7 +130,7 @@ export function Contact() {
           <Reveal delay={150}>
             <div className="flex h-full flex-col justify-center lg:pl-8">
               <p className="max-w-sm font-sans text-sm font-light leading-relaxed text-cream-800">
-                Prefer to reach us directly? Our partnerships team is available across time zones to discuss your property&apos;s needs.
+                Have a requirement or planning a new project? Tell us what you need, and our team will get back to you.
               </p>
 
               <div className="mt-10 space-y-8">
@@ -150,7 +150,7 @@ export function Contact() {
                   </span>
                   <div>
                     <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-cream-700">Phone</p>
-                    <p className="mt-1 font-sans text-sm text-espresso">+1 (212) 555-0184</p>
+                    <p className="mt-1 font-sans text-sm text-espresso">+91 9989 4567 82</p>
                   </div>
                 </div>
 
@@ -160,7 +160,7 @@ export function Contact() {
                   </span>
                   <div>
                     <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-cream-700">Location</p>
-                    <p className="mt-1 font-sans text-sm text-espresso">14 Mercer Street, New York, NY 10013</p>
+                    <p className="mt-1 font-sans text-sm text-espresso">Calicut</p>
                   </div>
                 </div>
               </div>

@@ -5,7 +5,7 @@ import { Experience } from '@/components/sections/Experience';
 import { WhyTelrah } from '@/components/sections/WhyTelrah';
 import { Collection } from '@/components/sections/Collection';
 import { Voices } from '@/components/sections/Voices';
-import { Leadership } from '@/components/sections/Leadership';
+import { TelrahStandard } from '@/components/sections/TelrahStandard';
 import { Partnership } from '@/components/sections/Partnership';
 import { Contact } from '@/components/sections/Contact';
 import { Footer } from '@/components/sections/Footer';
@@ -21,7 +21,7 @@ function App() {
         <WhyTelrah />
         <Collection />
         <Voices />
-        <Leadership />
+        <TelrahStandard />
         <Partnership />
         <Contact />
       </main>

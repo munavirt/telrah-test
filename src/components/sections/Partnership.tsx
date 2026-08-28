@@ -16,13 +16,13 @@ export function Partnership() {
                 <span className="italic text-gold-500">Partner</span> With Telrah
               </h2>
               <p className="mt-6 max-w-md font-sans text-sm font-light leading-relaxed text-white/70 sm:text-base">
-                Dedicated support, full customization, and a supply chain built for consistency. We work with a limited number of properties at a time — because partnership means attention.
+                Looking for a reliable hospitality supply partner? TELRAH works with hotels, resorts, villas, and other properties to provide the products they need, with flexible options, customization, and support along the way.
               </p>
               <a
                 href="#contact"
                 className="group mt-10 inline-flex w-fit items-center justify-center rounded-full bg-white px-8 py-4 text-[12px] font-medium uppercase tracking-[0.15em] text-espresso transition-all duration-300 ease-smooth hover:scale-[1.02] hover:shadow-xl"
               >
-                Schedule a Consultation
+                Talk to Our Team
               </a>
             </div>
 

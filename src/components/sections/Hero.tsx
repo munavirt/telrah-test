@@ -25,18 +25,18 @@ export function Hero() {
 
     const isMobile = window.innerWidth < 768;
     const initialBlur = isMobile ? 'blur(5px)' : 'blur(8px)';
-    
+
     // Initial state
     gsap.set('.hero-bg', { scale: 1.04, autoAlpha: 0.85 }); // Start mostly visible
-    
+
     // Individual line initial states
-    gsap.set(['.hero-line-1', '.hero-line-2', '.hero-line-3'], { 
-      y: '110%', 
+    gsap.set(['.hero-line-1', '.hero-line-2', '.hero-line-3'], {
+      y: '110%',
       autoAlpha: 0,
       scale: 1.025,
-      filter: initialBlur 
+      filter: initialBlur
     });
-    
+
     gsap.set('.hero-scroll', { autoAlpha: 0 });
 
     const tl = gsap.timeline();
@@ -48,52 +48,52 @@ export function Hero() {
       duration: 1.8,
       ease: 'power2.out',
     }, 0)
-    
-    // Line 1: "The Art of"
-    .to('.hero-line-1', {
-      y: '0%',
-      autoAlpha: 1,
-      scale: 1,
-      filter: 'blur(0px)',
-      duration: 1.0,
-      ease: 'power3.out',
-    }, 0.15)
-    
-    // Line 2: "Complete Stay" (Slightly stronger emphasis, slower duration)
-    .to('.hero-line-2', {
-      y: '0%',
-      autoAlpha: 1,
-      scale: 1,
-      filter: 'blur(0px)',
-      duration: 1.15,
-      ease: 'power3.out',
-    }, 0.25)
-    
-    // Line 3: "Hospitality"
-    .to('.hero-line-3', {
-      y: '0%',
-      autoAlpha: 1,
-      scale: 1,
-      filter: 'blur(0px)',
-      duration: 1.0,
-      ease: 'power3.out',
-    }, 0.35)
 
-    // Subtle group settling
-    .fromTo('.hero-text-group', {
-      y: 3,
-    }, {
-      y: 0,
-      duration: 0.6,
-      ease: 'power2.out',
-    }, 0.8)
-    
-    // Scroll Indicator
-    .to('.hero-scroll', {
-      autoAlpha: 1,
-      duration: 1.0,
-      ease: 'power2.out',
-    }, 1.5);
+      // Line 1: "The Art of"
+      .to('.hero-line-1', {
+        y: '0%',
+        autoAlpha: 1,
+        scale: 1,
+        filter: 'blur(0px)',
+        duration: 1.0,
+        ease: 'power3.out',
+      }, 0.15)
+
+      // Line 2: "Complete Stay" (Slightly stronger emphasis, slower duration)
+      .to('.hero-line-2', {
+        y: '0%',
+        autoAlpha: 1,
+        scale: 1,
+        filter: 'blur(0px)',
+        duration: 1.15,
+        ease: 'power3.out',
+      }, 0.25)
+
+      // Line 3: "Hospitality"
+      .to('.hero-line-3', {
+        y: '0%',
+        autoAlpha: 1,
+        scale: 1,
+        filter: 'blur(0px)',
+        duration: 1.0,
+        ease: 'power3.out',
+      }, 0.35)
+
+      // Subtle group settling
+      .fromTo('.hero-text-group', {
+        y: 3,
+      }, {
+        y: 0,
+        duration: 0.6,
+        ease: 'power2.out',
+      }, 0.8)
+
+      // Scroll Indicator
+      .to('.hero-scroll', {
+        autoAlpha: 1,
+        duration: 1.0,
+        ease: 'power2.out',
+      }, 1.5);
 
     // Subtle scroll parallax
     ScrollTrigger.create({
@@ -129,7 +129,7 @@ export function Hero() {
       </div>
 
       {/* Centered Typography */}
-      <div 
+      <div
         ref={headlineRef}
         className="relative z-20 flex flex-col items-center justify-center text-center px-6 sm:px-12 w-full max-w-5xl"
       >
@@ -137,17 +137,17 @@ export function Hero() {
           <h1 className="font-serif font-light leading-[1.1] text-white">
             <span className="block overflow-hidden">
               <span className="hero-line-1 block invisible text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7rem]">
-                The Art of
+                Everything You Need
               </span>
             </span>
             <span className="block overflow-hidden -mt-2 sm:-mt-4">
               <span className="hero-line-2 block invisible italic text-gold-400 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7rem]">
-                Complete Stay
+                For
               </span>
             </span>
             <span className="block overflow-hidden -mt-2 sm:-mt-4">
               <span className="hero-line-3 block invisible text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7rem]">
-                Hospitality
+                Better Stays
               </span>
             </span>
           </h1>

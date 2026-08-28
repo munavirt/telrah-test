@@ -10,19 +10,19 @@ type Testimonial = {
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    quote: 'After two years with Telrah, our guest satisfaction scores for room comfort have climbed consistently. The towels hold their softness through hundreds of wash cycles — something our previous supplier simply could not deliver.',
-    author: 'Lena Marchetti',
-    property: 'Boutique Hotel Manager, Florence',
+    quote: 'Products that hold up to the demands of everyday hospitality, from the first order to the many stays that follow.',
+    author: 'Reliable Quality',
+    property: 'Built for everyday hospitality',
   },
   {
-    quote: 'What sets Telrah apart is the consistency. Whether we order fifty sets or five hundred, the quality is identical. Their team understood our brand from day one and customized everything down to the thread color.',
-    author: 'Rajesh Kumar',
-    property: 'Resort Operations Head, Goa',
+    quote: 'From product specifications to custom requirements, we work around what your property actually needs.',
+    author: 'Made for Your Property',
+    property: 'Flexible products and customization',
   },
   {
-    quote: 'We needed a partner, not a vendor. Telrah assigned us a dedicated contact, built a custom amenities kit around our scent profile, and never missed a delivery window across three properties. That is rare in this industry.',
-    author: 'Amira Hassan',
-    property: 'Villa Group Purchasing Director, Marrakech',
+    quote: 'Consistent products, responsive service, and one team to help keep your hospitality operation moving.',
+    author: 'A Partner You Can Rely On',
+    property: 'Support when your team needs it',
   },
 ];
 
@@ -49,7 +49,7 @@ export function Voices() {
         {/* Heading */}
         <Reveal className="mb-16 text-center">
           <h2 className="font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
-            Guest <span className="italic text-gold-600">Voices</span>
+            What Matters to Our <span className="italic text-gold-600">Partners</span>
           </h2>
         </Reveal>
 

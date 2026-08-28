@@ -3,17 +3,17 @@ import { Reveal } from '@/components/Reveal';
 import { useCountUp } from '@/hooks/useCountUp';
 
 const STATS = [
-  { value: 700, suffix: '+', label: 'GSM Towel Options' },
-  { value: 100, suffix: '%', label: 'Customizable' },
-  { value: 4, suffix: '', label: 'Product Categories' },
-  { value: 1, suffix: '', label: 'Reliable Partner' },
+  { value: 700, suffix: '+', label: 'Towel GSM Options' },
+  { value: 100, suffix: '%', label: 'Customizable Products' },
+  { value: 4, suffix: '', label: 'Core Product Categories' },
+  { value: 1, suffix: '', label: 'Dedicated Partner' },
 ];
 
 const DIFFERENTIATORS = [
-  'Quality First',
+  'Reliable Quality',
   'Consistent Supply',
-  'Custom Solutions',
-  'Dedicated Support',
+  'Made to Your Needs',
+  'Support When You Need It',
 ];
 
 function StatCard({ value, suffix, label }: { value: number; suffix: string; label: string }) {
@@ -22,10 +22,10 @@ function StatCard({ value, suffix, label }: { value: number; suffix: string; lab
   return (
     <div className="px-6 py-10 sm:px-8 sm:py-12">
       <div className="flex items-baseline">
-        <span ref={ref} className="font-serif text-5xl font-light text-espresso lg:text-6xl">
+        <span ref={ref} className="font-sans text-5xl font-light text-espresso lg:text-6xl">
           {current}
         </span>
-        <span className="font-serif text-3xl font-light text-gold-500 lg:text-4xl">{suffix}</span>
+        <span className="font-sans text-3xl font-light text-gold-500 lg:text-4xl">{suffix}</span>
       </div>
       <p className="mt-3 text-[11px] font-medium uppercase tracking-[0.2em] text-cream-700">{label}</p>
     </div>
@@ -44,14 +44,14 @@ export function WhyTelrah() {
                 <span className="italic text-gold-600">Why</span> Telrah
               </h2>
               <p className="mt-6 max-w-sm font-sans text-sm font-light leading-relaxed text-cream-800">
-                We exist for properties that treat comfort as a standard, not a feature. Every product is engineered for longevity, consistency, and the kind of quiet quality guests remember.
+                We work with hospitality teams that need products they can rely on every day. From durable towels and linens to flexible product options, TELRAH helps properties maintain consistent quality while making purchasing simpler.
               </p>
               <a
                 href="#collection"
                 className="group mt-8 inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.15em] text-espresso"
               >
                 <span className="relative">
-                  Learn about our standards
+                  See What We Offer
                   <span className="absolute -bottom-1 left-0 h-px w-full bg-gold-500 transition-all duration-300 group-hover:w-full" />
                 </span>
               </a>

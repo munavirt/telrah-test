@@ -8,25 +8,25 @@ gsap.registerPlugin(ScrollTrigger);
 const PILLARS = [
   {
     number: '01',
-    title: 'The Experience',
-    italicWord: 'Experience',
-    body: 'Premium textiles transform a room into a moment. From the first touch of a sheet to the weight of a robe, every interaction is designed to feel intentional, considered, and quietly remarkable.',
+    title: 'The Details',
+    italicWord: 'Details',
+    body: 'The little things guests notice often make the biggest difference. From crisp bed linen to soft robes, we choose textiles that make rooms feel welcoming from the moment guests walk in.',
     image: 'https://images.pexels.com/photos/2736384/pexels-photo-2736384.jpeg?auto=compress&cs=tinysrgb&w=1600',
     imageAlt: 'Luxury hotel bed with white linens and decorative lamp',
   },
   {
     number: '02',
-    title: 'The Comfort',
-    italicWord: 'Comfort',
-    body: 'Tactile quality you can feel in every gram. Our towels range from 400 to 700+ GSM, our linens are woven for breathability and softness, and every fiber is selected for how it performs after the hundredth wash, not just the first.',
+    title: 'Comfort That Lasts',
+    italicWord: 'Comfort That Lasts',
+    body: 'Good hospitality starts with comfort guests can feel. Our towels range from 400 to 700+ GSM, while our linens are chosen for softness, breathability, and everyday durability. Because they need to feel good on the first stay — and still perform after many more.',
     image: 'https://images.pexels.com/photos/7640927/pexels-photo-7640927.jpeg?auto=compress&cs=tinysrgb&w=1600',
     imageAlt: 'Macro detail of soft white towel fabric texture',
   },
   {
     number: '03',
-    title: 'The Complete Stay',
-    italicWord: 'Complete Stay',
-    body: 'From bedding to bath, amenities to extra beds — a single, cohesive product ecosystem. One partner, one standard, one point of contact for everything your property needs to deliver a seamless guest experience.',
+    title: 'Everything for the Stay',
+    italicWord: 'Everything for the Stay',
+    body: 'From bedding and bath essentials to amenities and extra beds, TELRAH brings the key details of a guest stay together in one place. One partner, one consistent standard, and less to manage for your team.',
     image: 'https://images.pexels.com/photos/27638184/pexels-photo-27638184.jpeg?auto=compress&cs=tinysrgb&w=1600',
     imageAlt: 'Hotel bathroom amenities arranged on a wooden counter',
   },
@@ -126,10 +126,10 @@ export function Experience() {
       <div className="mx-auto max-w-7xl px-6 py-24 text-center sm:py-32 lg:py-40">
         <Reveal>
           <h2 className="font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
-            The Telrah <span className="italic text-gold-600">Experience</span>
+            Made for the <span className="italic text-gold-600">Way Guests Stay</span>
           </h2>
           <p className="mx-auto mt-6 max-w-lg font-sans text-sm font-light leading-relaxed text-cream-800">
-            Three promises, seamlessly woven into everything we create.
+            From the room to the smallest detail, everything is chosen to make a stay feel comfortable, easy, and well looked after.
           </p>
         </Reveal>
       </div>
