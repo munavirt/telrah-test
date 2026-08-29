@@ -27,7 +27,7 @@ function StatCard({ value, suffix, label }: { value: number; suffix: string; lab
         </span>
         <span className="font-sans text-3xl font-light text-gold-500 lg:text-4xl">{suffix}</span>
       </div>
-      <p className="mt-3 text-[11px] font-medium uppercase tracking-[0.2em] text-cream-700">{label}</p>
+      <p className="mt-3 text-[11px] font-medium uppercase tracking-[0.2em] text-espresso/60">{label}</p>
     </div>
   );
 }
@@ -43,7 +43,7 @@ export function WhyTelrah() {
               <h2 className="font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
                 <span className="italic text-gold-600">Why</span> Telrah
               </h2>
-              <p className="mt-6 max-w-sm font-sans text-sm font-light leading-relaxed text-cream-800">
+              <p className="mt-6 max-w-sm font-sans text-sm font-light leading-relaxed text-espresso/80">
                 We work with hospitality teams that need products they can rely on every day. From durable towels and linens to flexible product options, TELRAH helps properties maintain consistent quality while making purchasing simpler.
               </p>
               <a

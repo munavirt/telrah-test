@@ -237,7 +237,7 @@ export function TelrahStandard() {
               <span className="block italic text-gold-600">the Demands</span>
               <span className="block">of Hospitality</span>
             </h2>
-            <p className="mt-8 max-w-md font-sans text-sm font-light leading-relaxed text-cream-800 sm:text-base">
+            <p className="mt-8 max-w-md font-sans text-sm font-light leading-relaxed text-espresso/80 sm:text-base">
               From the materials we choose to the way products perform in daily use, TELRAH focuses on what matters to hospitality teams: comfort, durability, consistency, and products that are made to fit the property.
             </p>
           </div>
@@ -260,7 +260,7 @@ export function TelrahStandard() {
                   <span className="text-[10px] sm:text-xs font-medium uppercase tracking-[0.25em] text-gold-600">{scene.label}</span>
                 </div>
                 <h3 className="font-serif text-3xl sm:text-4xl font-light leading-tight text-espresso mb-3">{scene.title}</h3>
-                <p className="text-cream-800 font-light text-sm sm:text-base max-w-md">{scene.description}</p>
+                <p className="text-espresso/80 font-light text-sm sm:text-base max-w-md">{scene.description}</p>
               </div>
             </div>
           ))}
@@ -286,7 +286,7 @@ export function TelrahStandard() {
             <span className="block italic text-gold-600">the Demands</span>
             <span className="block">of Hospitality</span>
           </h2>
-          <p className="mt-8 max-w-md font-sans text-sm font-light leading-relaxed text-cream-800 sm:text-base">
+          <p className="mt-8 max-w-md font-sans text-sm font-light leading-relaxed text-espresso/80 sm:text-base">
             From the materials we choose to the way products perform in daily use, TELRAH focuses on what matters to hospitality teams: comfort, durability, consistency, and products that are made to fit the property.
           </p>
         </div>

@@ -38,7 +38,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
         {/* Large, highly asymmetric flowing form entering from the left */}
         <svg
           viewBox="0 0 1440 1440"
-          className="absolute -left-[20%] -top-[10%] w-[130vw] min-w-[1200px] text-cream-200/50 opacity-70 mix-blend-multiply origin-top-left"
+          className="absolute -left-[20%] -top-[10%] w-[130vw] min-w-[1200px] text-espresso/10 opacity-70 mix-blend-multiply origin-top-left"
           fill="currentColor"
           style={parallax(0.015)}
         >
@@ -54,7 +54,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
         {/* A long flowing diagonal form cropping in from the bottom right */}
         <svg
           viewBox="0 0 1440 1440"
-          className="absolute -bottom-[20%] -right-[15%] w-[140vw] min-w-[1300px] text-cream-300/40 opacity-80 mix-blend-multiply"
+          className="absolute -bottom-[20%] -right-[15%] w-[140vw] min-w-[1300px] text-espresso/15 opacity-80 mix-blend-multiply"
           fill="currentColor"
           style={parallax(-0.01)}
         >
@@ -102,7 +102,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
         {/* A highly vertical, asymmetrical folded form on the right */}
         <svg
           viewBox="0 0 1440 1440"
-          className="absolute -top-[10%] -right-[10%] w-[110vw] min-w-[1100px] text-cream-200/50 opacity-75 mix-blend-multiply"
+          className="absolute -top-[10%] -right-[10%] w-[110vw] min-w-[1100px] text-espresso/10 opacity-75 mix-blend-multiply"
           fill="currentColor"
           style={parallax(0.015)}
         >
@@ -142,7 +142,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
         {/* A massive, enveloping abstract landscape-like form spanning the bottom right */}
         <svg
           viewBox="0 0 1440 1440"
-          className="absolute -bottom-[30%] -right-[20%] w-[160vw] min-w-[1500px] text-cream-300/40 opacity-80 mix-blend-multiply"
+          className="absolute -bottom-[30%] -right-[20%] w-[160vw] min-w-[1500px] text-espresso/15 opacity-80 mix-blend-multiply"
           fill="currentColor"
           style={parallax(0.02)}
         >

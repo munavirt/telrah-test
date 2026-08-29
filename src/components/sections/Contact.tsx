@@ -9,6 +9,11 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    const text = `*New Contact Request*\n\n*Name:* ${form.name}\n*Email:* ${form.email}\n*Property Type:* ${form.propertyType}\n*Message:* ${form.message}`;
+    const whatsappUrl = `https://wa.me/919061733999?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank');
+
     setSubmitted(true);
   };
 
@@ -36,7 +41,7 @@ export function Contact() {
                   <Mail size={24} strokeWidth={1.5} className="text-gold-600" />
                 </div>
                 <h3 className="mt-6 font-serif text-2xl font-light text-espresso">Thanks for Reaching Out</h3>
-                <p className="mt-3 max-w-sm font-sans text-sm font-light leading-relaxed text-cream-800">
+                <p className="mt-3 max-w-sm font-sans text-sm font-light leading-relaxed text-espresso/80">
                   Thanks for getting in touch. Our team will review your message and get back to you shortly.
                 </p>
                 <button
@@ -52,7 +57,7 @@ export function Contact() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-8">
                 <div>
-                  <label htmlFor="name" className="text-[10px] font-medium uppercase tracking-[0.2em] text-cream-700">
+                  <label htmlFor="name" className="text-[10px] font-medium uppercase tracking-[0.2em] text-espresso/60">
                     Name
                   </label>
                   <input
@@ -67,7 +72,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="text-[10px] font-medium uppercase tracking-[0.2em] text-cream-700">
+                  <label htmlFor="email" className="text-[10px] font-medium uppercase tracking-[0.2em] text-espresso/60">
                     Email
                   </label>
                   <input
@@ -82,7 +87,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="propertyType" className="text-[10px] font-medium uppercase tracking-[0.2em] text-cream-700">
+                  <label htmlFor="propertyType" className="text-[10px] font-medium uppercase tracking-[0.2em] text-espresso/60">
                     Property Type
                   </label>
                   <select
@@ -102,7 +107,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="text-[10px] font-medium uppercase tracking-[0.2em] text-cream-700">
+                  <label htmlFor="message" className="text-[10px] font-medium uppercase tracking-[0.2em] text-espresso/60">
                     Message
                   </label>
                   <textarea
@@ -129,7 +134,7 @@ export function Contact() {
           {/* Contact details */}
           <Reveal delay={150}>
             <div className="flex h-full flex-col justify-center lg:pl-8">
-              <p className="max-w-sm font-sans text-sm font-light leading-relaxed text-cream-800">
+              <p className="max-w-sm font-sans text-sm font-light leading-relaxed text-espresso/80">
                 Have a requirement or planning a new project? Tell us what you need, and our team will get back to you.
               </p>
 
@@ -139,8 +144,8 @@ export function Contact() {
                     <Mail size={16} strokeWidth={1.5} className="text-gold-600" />
                   </span>
                   <div>
-                    <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-cream-700">Email</p>
-                    <p className="mt-1 font-sans text-sm text-espresso">partnerships@telrah.com</p>
+                    <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-espresso/60">Email</p>
+                    <p className="mt-1 font-sans text-sm text-espresso">info@telrah.co</p>
                   </div>
                 </div>
 
@@ -149,8 +154,8 @@ export function Contact() {
                     <Phone size={16} strokeWidth={1.5} className="text-gold-600" />
                   </span>
                   <div>
-                    <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-cream-700">Phone</p>
-                    <p className="mt-1 font-sans text-sm text-espresso">+91 9989 4567 82</p>
+                    <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-espresso/60">Phone</p>
+                    <p className="mt-1 font-sans text-sm text-espresso">+91 9061 7339 99</p>
                   </div>
                 </div>
 
@@ -159,8 +164,8 @@ export function Contact() {
                     <MapPin size={16} strokeWidth={1.5} className="text-gold-600" />
                   </span>
                   <div>
-                    <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-cream-700">Location</p>
-                    <p className="mt-1 font-sans text-sm text-espresso">Calicut</p>
+                    <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-espresso/60">Location</p>
+                    <p className="mt-1 font-sans text-sm text-espresso">Sornakanji Estate -2 Surat 395017</p>
                   </div>
                 </div>
               </div>

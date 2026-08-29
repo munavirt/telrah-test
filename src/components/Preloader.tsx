@@ -48,9 +48,9 @@ export function Preloader() {
         <img
           src={telrahLogo}
           alt="Telrah"
-          className="preloader-logo h-[76px] w-[76px] object-contain opacity-0"
+          className="preloader-logo h-[160px] w-[160px] object-contain opacity-0"
         />
-        <span className="preloader-text mt-4 font-serif text-sm font-medium tracking-[0.4em] text-espresso/70 opacity-0">
+        <span className="preloader-text mt-6 font-serif text-xl font-medium tracking-[0.4em] text-espresso/70 opacity-0">
           TELRAH
         </span>
       </div>

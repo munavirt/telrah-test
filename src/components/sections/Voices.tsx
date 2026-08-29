@@ -61,7 +61,7 @@ export function Voices() {
             onMouseLeave={() => setPaused(false)}
           >
             {/* Decorative quote mark */}
-            <span className="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 font-serif text-[120px] leading-none text-cream-400 select-none">
+            <span className="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 font-serif text-[120px] leading-none text-espresso/15 select-none">
               &ldquo;
             </span>
 
@@ -83,7 +83,7 @@ export function Voices() {
                     ))}
                   </div>
                   <p className="mt-5 text-[12px] font-medium uppercase tracking-[0.2em] text-espresso">{t.author}</p>
-                  <p className="mt-1 text-[12px] font-light text-cream-700">{t.property}</p>
+                  <p className="mt-1 text-[12px] font-light text-espresso/60">{t.property}</p>
                 </blockquote>
               ))}
             </div>

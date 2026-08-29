@@ -128,7 +128,7 @@ export function Experience() {
           <h2 className="font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
             Made for the <span className="italic text-gold-600">Way Guests Stay</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-lg font-sans text-sm font-light leading-relaxed text-cream-800">
+          <p className="mx-auto mt-6 max-w-lg font-sans text-sm font-light leading-relaxed text-espresso/80">
             From the room to the smallest detail, everything is chosen to make a stay feel comfortable, easy, and well looked after.
           </p>
         </Reveal>
@@ -165,7 +165,7 @@ export function Experience() {
                     <h3 className="mt-4 font-serif text-4xl font-light leading-tight text-espresso sm:text-5xl lg:text-6xl">
                       {renderTitle(pillar)}
                     </h3>
-                    <p className="mt-6 max-w-md font-sans text-sm font-light leading-relaxed text-cream-800 sm:text-base lg:text-lg">
+                    <p className="mt-6 max-w-md font-sans text-sm font-light leading-relaxed text-espresso/80 sm:text-base lg:text-lg">
                       {pillar.body}
                     </p>
                   </div>
@@ -193,7 +193,7 @@ export function Experience() {
             {PILLARS.map((pillar, i) => (
               <div key={pillar.number} className="flex items-center gap-3">
                 <span
-                  className={`font-serif text-sm italic transition-all duration-500 ${i === chapter ? 'text-espresso' : 'text-cream-500'
+                  className={`font-serif text-sm italic transition-all duration-500 ${i === chapter ? 'text-espresso' : 'text-espresso/50'
                     }`}
                 >
                   {pillar.number}
@@ -212,7 +212,7 @@ export function Experience() {
               <span className="font-serif text-2xl font-light text-espresso">
                 {String(chapter + 1).padStart(2, '0')}
               </span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-cream-600">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-espresso/60">
                 of {String(PILLARS.length).padStart(2, '0')}
               </span>
             </div>

@@ -98,13 +98,13 @@ export function Footer() {
                   href="mailto:partnerships@telrah.com"
                   className="font-sans text-[13px] font-light text-white/60 transition-colors duration-300 hover:text-gold-500"
                 >
-                  partnerships@telrah.com
+                  info@telrah.co
                 </a>
               </li>
 
               <li>
                 <span className="font-sans text-[13px] font-light text-white/60">
-                  +91 9989 4567 82
+                  +91 9061 7339 99
                 </span>
               </li>
             </ul>
@@ -130,12 +130,12 @@ export function Footer() {
         <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
 
           {/* Copyright */}
-          <p className="font-sans text-[10px] font-light tracking-[0.02em] text-white/40">
+          <p className="font-sans text-xs font-bold tracking-[0.02em] text-white/40">
             © 2026 TELRAH. All Rights Reserved.
           </p>
 
           {/* Credits */}
-          <p className="font-sans text-[10px] font-light tracking-[0.02em] text-white/40">
+          <p className="font-sans text-xs font-bold tracking-[0.02em] text-white/40">
             Designed &amp; Developed by{' '}
             <a
               href="https://www.promocraft.in/"

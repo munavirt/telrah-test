@@ -68,7 +68,7 @@ export function Navbar() {
               className={[
                 "text-xs tracking-[0.1em] uppercase transition-colors duration-500",
                 scrolled
-                  ? "text-[#4C2D2B]/80 hover:text-[#4C2D2B]"
+                  ? "text-[#4C2D2B] hover:text-[#4C2D2B]"
                   : "text-white/85 hover:text-white",
               ].join(" ")}
             >
@@ -118,7 +118,7 @@ export function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm tracking-[0.08em] uppercase text-[#4C2D2B]/80"
+              className="text-sm tracking-[0.08em] uppercase text-[#4C2D2B]"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
