@@ -24,7 +24,7 @@ export function Contact() {
   return (
     <section id="contact" className="grain-overlay bg-white py-24 sm:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-20">
-        
+
         <Reveal className="mb-16 text-center">
           <Eyebrow withLines className="justify-center">Contact</Eyebrow>
           <h2 className="mt-6 font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
@@ -33,7 +33,7 @@ export function Contact() {
         </Reveal>
 
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
-          
+
           <Reveal>
             {submitted ? (
               <div className="flex h-full flex-col items-center justify-center rounded-xl border border-cream-400 bg-cream-100 p-12 text-center animate-scale-in">
@@ -98,11 +98,11 @@ export function Contact() {
                     className="mt-2 w-full border-b border-cream-400 bg-transparent pb-3 font-sans text-sm text-espresso outline-none transition-colors focus:border-espresso"
                   >
                     <option value="" disabled>Select your property type</option>
-                    <option value="boutique-hotel">Hotel</option>
-                    <option value="resort">Resort</option>
-                    <option value="villa-group">Villa Group</option>
-                    <option value="serviced-apartments">Serviced Apartments</option>
-                    <option value="other">Other</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Resort">Resort</option>
+                    <option value="Villa-group">Villa Group</option>
+                    <option value="Serviced-Apartments">Serviced Apartments</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
 
