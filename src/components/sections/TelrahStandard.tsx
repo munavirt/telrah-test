@@ -76,13 +76,12 @@ export function TelrahStandard() {
   const pinRef = useRef<HTMLDivElement>(null);
   const [isReduced, setIsReduced] = useState(false);
 
-  // Handle resize and refresh
   const refreshScrollTrigger = useCallback(() => {
     ScrollTrigger.refresh();
   }, []);
 
   useEffect(() => {
-    // Check for reduced motion
+
     const reducedMatch = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     setIsReduced(reducedMatch);
 
@@ -94,7 +93,6 @@ export function TelrahStandard() {
       const scenes = gsap.utils.toArray('.ts-scene');
       const totalScenes = scenes.length;
 
-      // Pin the section for cinematic sequence
       const scrollTween = gsap.to(scenes, {
         xPercent: -100 * (totalScenes - 1),
         ease: 'none',
@@ -109,7 +107,6 @@ export function TelrahStandard() {
         }
       });
 
-      // Scene animations
       scenes.forEach((scene: any, index: number) => {
         const img = scene.querySelector('.ts-scene-img');
         const numText = scene.querySelector('.ts-num');
@@ -119,7 +116,6 @@ export function TelrahStandard() {
 
         const treatmentLayer = scene.querySelector('.ts-treatment');
 
-        // Image animation - cinematic scale (clean image)
         if (img) {
           gsap.set(img, { scale: 1.1, opacity: 0 });
 
@@ -136,7 +132,6 @@ export function TelrahStandard() {
             }
           });
 
-          // Exit animation
           gsap.to(img, {
             scale: 0.95,
             opacity: 0,
@@ -151,7 +146,6 @@ export function TelrahStandard() {
           });
         }
 
-        // Staggered typography animation with refined timing
         const timeline = gsap.timeline({
           scrollTrigger: {
             trigger: scene,
@@ -205,7 +199,6 @@ export function TelrahStandard() {
 
     }, sectionRef);
 
-    // Handle resize
     const handleResize = () => {
       refreshScrollTrigger();
     };
@@ -220,7 +213,6 @@ export function TelrahStandard() {
     };
   }, [refreshScrollTrigger]);
 
-  // Reduced motion fallback
   if (isReduced) {
     return (
       <section ref={sectionRef} id="standard" className="relative bg-cream-100 overflow-hidden text-espresso">
@@ -272,7 +264,6 @@ export function TelrahStandard() {
   return (
     <section ref={sectionRef} id="standard" className="relative bg-cream-100 overflow-hidden text-espresso">
 
-      {/* SECTION INTRODUCTION */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-20 lg:py-40">
         <div className="max-w-2xl">
           <div className="mb-8 flex items-center gap-4">
@@ -292,13 +283,12 @@ export function TelrahStandard() {
         </div>
       </div>
 
-      {/* CINEMATIC VIEWPORT */}
       <div
         ref={pinRef}
         className="relative h-screen w-full bg-cream-50 overflow-hidden"
         style={{ minHeight: '100vh' }}
       >
-        {/* Progress Indicator */}
+        
         <div className="absolute top-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3">
           <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-gold-600">
             01
@@ -309,14 +299,13 @@ export function TelrahStandard() {
           </span>
         </div>
 
-        {/* Scenes Container */}
         <div className="flex h-full w-full">
           {SCENES.map((scene, index) => (
             <div
               key={scene.num}
               className="ts-scene relative flex-shrink-0 w-full h-full flex items-center justify-center"
             >
-              {/* Background Image Layer */}
+              
               <div className="absolute inset-0 overflow-hidden bg-espresso-900">
                 <img
                   src={scene.img}
@@ -327,9 +316,8 @@ export function TelrahStandard() {
                 />
               </div>
 
-              {/* Treatment Layers (Softening + Readability) */}
               <div className="ts-treatment absolute inset-0 pointer-events-none z-0">
-                {/* Subtle Image Softening */}
+                
                 <div 
                   className="absolute inset-0"
                   style={{
@@ -339,7 +327,7 @@ export function TelrahStandard() {
                     WebkitMaskImage: (scene as any).treatment.blurMask
                   }}
                 />
-                {/* Localized Gradient Overlay */}
+                
                 <div 
                   className="absolute inset-0"
                   style={{
@@ -348,31 +336,27 @@ export function TelrahStandard() {
                 />
               </div>
 
-              {/* Typography Container */}
               <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 lg:px-20 flex flex-col justify-center">
                 <div className="max-w-2xl sm:max-w-3xl">
-                  {/* Chapter Number */}
+                  
                   <div className="ts-num mb-3 sm:mb-4">
                     <span className={`font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl italic font-light ${(scene as any).treatment.numColor}`}>
                       {scene.num}
                     </span>
                   </div>
 
-                  {/* Label */}
                   <div className="ts-label mb-4 sm:mb-6">
                     <span className={`text-[10px] sm:text-[11px] lg:text-[12px] font-medium uppercase tracking-[0.25em] sm:tracking-[0.3em] ${(scene as any).treatment.labelColor}`}>
                       {scene.label}
                     </span>
                   </div>
 
-                  {/* Title */}
                   <div className="ts-title mb-4 sm:mb-6">
                     <h3 className={`font-serif text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light leading-tight ${(scene as any).treatment.textColor}`}>
                       {scene.title}
                     </h3>
                   </div>
 
-                  {/* Description */}
                   {scene.description && (
                     <div className="ts-description max-w-md sm:max-w-lg">
                       <p className={`font-sans text-xs sm:text-sm lg:text-base font-light leading-relaxed ${(scene as any).treatment.descColor}`}>
@@ -387,7 +371,6 @@ export function TelrahStandard() {
         </div>
       </div>
 
-      {/* Release buffer */}
       <div className="h-16 bg-cream-50 sm:h-24" />
     </section>
   );

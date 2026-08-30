@@ -22,10 +22,8 @@ export function Footer() {
     <footer className="bg-espresso text-white">
       <div className="mx-auto max-w-7xl px-6 py-20 sm:px-12 lg:px-20">
 
-        {/* Top — 4 column grid */}
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
 
-          {/* Brand */}
           <div className="lg:pr-8">
             <h3 className="font-serif text-3xl font-medium tracking-[0.15em] text-white">
               TELRAH
@@ -36,7 +34,6 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Products */}
           <div>
             <h4 className="text-[12px] font-medium uppercase tracking-[0.2em] text-white">
               Products
@@ -56,7 +53,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Explore */}
           <div>
             <h4 className="text-[12px] font-medium uppercase tracking-[0.2em] text-white">
               Explore
@@ -86,7 +82,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Connect */}
           <div>
             <h4 className="text-[12px] font-medium uppercase tracking-[0.2em] text-white">
               Connect
@@ -126,15 +121,12 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
 
-          {/* Copyright */}
           <p className="font-sans text-xs font-bold tracking-[0.02em] text-white/40">
             © 2026 TELRAH. All Rights Reserved.
           </p>
 
-          {/* Credits */}
           <p className="font-sans text-xs font-bold tracking-[0.02em] text-white/40">
             Designed &amp; Developed by{' '}
             <a

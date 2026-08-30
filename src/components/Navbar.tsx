@@ -48,7 +48,7 @@ export function Navbar() {
       ].join(" ")}
     >
       <div className="flex items-center justify-between px-6 md:px-10 lg:px-14 h-20 md:h-24">
-        {/* Logo */}
+        
         <a
           href="#top"
           className={[
@@ -59,7 +59,6 @@ export function Navbar() {
           TELRAH
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-10">
           {NAV_LINKS.map((link) => (
             <a
@@ -77,7 +76,6 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* CTA */}
         <div className="hidden md:block">
           <a
             href="#contact"
@@ -87,7 +85,6 @@ export function Navbar() {
           </a>
         </div>
 
-        {/* Mobile toggle */}
         <button
           className="md:hidden flex flex-col gap-1.5 w-8 h-8 items-center justify-center"
           onClick={() => setMobileOpen((v) => !v)}
@@ -111,7 +108,6 @@ export function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-[#4C2D2B]/10 px-6 py-6 flex flex-col gap-5">
           {NAV_LINKS.map((link) => (

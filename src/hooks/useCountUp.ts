@@ -1,8 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 
-/**
- * Counts up from 0 to `target` when the element scrolls into view.
- */
 export function useCountUp(target: number, duration = 2000) {
   const ref = useRef<HTMLSpanElement>(null);
   const [value, setValue] = useState(0);

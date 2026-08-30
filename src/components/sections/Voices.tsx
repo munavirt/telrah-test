@@ -46,26 +46,24 @@ export function Voices() {
   return (
     <section id="voices" className="bg-white py-24 sm:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-20">
-        {/* Heading */}
+        
         <Reveal className="mb-16 text-center">
           <h2 className="font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
             What Matters to Our <span className="italic text-gold-600">Partners</span>
           </h2>
         </Reveal>
 
-        {/* Carousel */}
         <Reveal delay={100}>
           <div
             className="relative mx-auto max-w-3xl text-center"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
           >
-            {/* Decorative quote mark */}
+            
             <span className="pointer-events-none absolute -top-16 left-1/2 -translate-x-1/2 font-serif text-[120px] leading-none text-espresso/15 select-none">
               &ldquo;
             </span>
 
-            {/* Testimonial text */}
             <div className="relative min-h-[280px] sm:min-h-[240px]">
               {TESTIMONIALS.map((t, i) => (
                 <blockquote
@@ -88,7 +86,6 @@ export function Voices() {
               ))}
             </div>
 
-            {/* Navigation */}
             <div className="mt-12 flex items-center justify-center gap-6">
               <button
                 onClick={goPrev}
@@ -98,7 +95,6 @@ export function Voices() {
                 <ArrowLeft size={18} strokeWidth={1.5} />
               </button>
 
-              {/* Dots */}
               <div className="flex items-center gap-2">
                 {TESTIMONIALS.map((_, i) => (
                   <button

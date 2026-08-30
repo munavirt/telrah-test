@@ -6,7 +6,6 @@ type EyebrowProps = {
   withLines?: boolean;
 };
 
-/** Small uppercase label, optionally flanked by thin gold lines. */
 export function Eyebrow({ children, className = '', withLines = false }: EyebrowProps) {
   if (!withLines) {
     return <span className={`label-micro ${className}`}>{children}</span>;

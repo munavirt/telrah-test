@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Reveal } from '@/components/Reveal';
+import EverythingFortheStay from '../../assets/amenties-kit.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,7 +28,7 @@ const PILLARS = [
     title: 'Everything for the Stay',
     italicWord: 'Everything for the Stay',
     body: 'From bedding and bath essentials to amenities and extra beds, TELRAH brings the key details of a guest stay together in one place. One partner, one consistent standard, and less to manage for your team.',
-    image: 'https://images.pexels.com/photos/27638184/pexels-photo-27638184.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: EverythingFortheStay,
     imageAlt: 'Hotel bathroom amenities arranged on a wooden counter',
   },
 ];
@@ -40,7 +41,6 @@ export function Experience() {
   const chapterRef = useRef(0);
   const [chapter, setChapter] = useState(0);
 
-  // --- Pin only: ScrollTrigger pins the stage, does NOT calculate chapters ---
   useEffect(() => {
     const ctx = gsap.context(() => {
       const st = ScrollTrigger.create({
@@ -55,7 +55,6 @@ export function Experience() {
     return () => ctx.revert();
   }, []);
 
-  // --- Chapter state: derived from scroll position, one owner, no wheel hijack ---
   useEffect(() => {
     let raf = 0;
 
@@ -71,15 +70,15 @@ export function Experience() {
       let fullProgress: number;
 
       if (rect.top > 0) {
-        // Above the zone — entering from Hero → show 01
+
         newChapter = 0;
         fullProgress = 0;
       } else if (rect.bottom < viewport) {
-        // Below the zone — entering from Next Section → show 03
+
         newChapter = PILLARS.length - 1;
         fullProgress = 1;
       } else {
-        // Inside the zone — map scroll progress to discrete chapter
+
         const progress = Math.max(0, Math.min(1, -rect.top / scrollable));
         fullProgress = progress;
         newChapter = Math.min(PILLARS.length - 1, Math.floor(progress * PILLARS.length));
@@ -122,7 +121,7 @@ export function Experience() {
 
   return (
     <section id="experience" ref={sectionRef} className="relative bg-cream-100">
-      {/* Heading — scrolls normally before the pin starts */}
+      
       <div className="mx-auto max-w-7xl px-6 py-24 text-center sm:py-32 lg:py-40">
         <Reveal>
           <h2 className="font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
@@ -134,9 +133,8 @@ export function Experience() {
         </Reveal>
       </div>
 
-      {/* Scroll zone — 300vh real scroll distance (3 chapters × 100vh) */}
       <div ref={scrollZoneRef} style={{ height: '300vh' }} className="relative">
-        {/* Pinned stage — 100vh, pinned by ScrollTrigger, never controls scroll */}
+        
         <div ref={stageRef} className="relative h-screen w-full overflow-hidden">
           {PILLARS.map((pillar, index) => {
             const reversed = index % 2 === 1;
@@ -157,7 +155,7 @@ export function Experience() {
                 }}
               >
                 <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-8 px-6 sm:px-12 lg:grid-cols-2 lg:gap-16 lg:px-20">
-                  {/* Text */}
+                  
                   <div className={reversed ? 'lg:order-2 lg:pr-8' : 'lg:pl-8'}>
                     <span className="font-serif text-5xl italic text-gold-500 sm:text-6xl">
                       {pillar.number}
@@ -170,7 +168,6 @@ export function Experience() {
                     </p>
                   </div>
 
-                  {/* Image */}
                   <div
                     className={`relative aspect-[4/3] overflow-hidden rounded-xl shadow-2xl shadow-espresso/10 ${reversed ? 'lg:order-1' : ''
                       }`}
@@ -188,7 +185,6 @@ export function Experience() {
             );
           })}
 
-          {/* Step indicator — left side */}
           <div className="absolute left-6 top-1/2 z-30 hidden -translate-y-1/2 flex-col gap-3 sm:left-10 lg:flex">
             {PILLARS.map((pillar, i) => (
               <div key={pillar.number} className="flex items-center gap-3">
@@ -206,7 +202,6 @@ export function Experience() {
             ))}
           </div>
 
-          {/* Progress + counter — bottom right */}
           <div className="absolute bottom-8 right-8 z-30 flex items-center gap-4 sm:bottom-12 sm:right-12">
             <div className="flex flex-col items-end gap-1">
               <span className="font-serif text-2xl font-light text-espresso">

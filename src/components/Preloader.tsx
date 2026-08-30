@@ -21,14 +21,13 @@ export function Preloader() {
 
     const tl = gsap.timeline();
 
-    // Logo entrance
     tl.fromTo(
       '.preloader-logo',
       { opacity: 0, scale: 0.92 },
       { opacity: 1, scale: 1, duration: 0.4, ease: 'power2.out' },
       0.2 // Starts at 0.2s, ends at 0.6s
     )
-    // Text entrance
+
     .fromTo(
       '.preloader-text',
       { opacity: 0, y: 8, letterSpacing: '0.2em' },

@@ -9,6 +9,7 @@ import { TelrahStandard } from '@/components/sections/TelrahStandard';
 import { Partnership } from '@/components/sections/Partnership';
 import { Contact } from '@/components/sections/Contact';
 import { Footer } from '@/components/sections/Footer';
+import { WhatsAppWidget } from '@/components/WhatsAppWidget';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppWidget />
     </>
   );
 }

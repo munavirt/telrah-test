@@ -35,7 +35,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
   if (variant === 'experience') {
     return (
       <div className={baseClasses}>
-        {/* Large, highly asymmetric flowing form entering from the left */}
+        
         <svg
           viewBox="0 0 1440 1440"
           className="absolute -left-[20%] -top-[10%] w-[130vw] min-w-[1200px] text-espresso/10 opacity-70 mix-blend-multiply origin-top-left"
@@ -51,7 +51,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
   if (variant === 'why') {
     return (
       <div className={baseClasses}>
-        {/* A long flowing diagonal form cropping in from the bottom right */}
+        
         <svg
           viewBox="0 0 1440 1440"
           className="absolute -bottom-[20%] -right-[15%] w-[140vw] min-w-[1300px] text-espresso/15 opacity-80 mix-blend-multiply"
@@ -67,7 +67,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
   if (variant === 'collection') {
     return (
       <div className={baseClasses}>
-        {/* A broad, elongated curved form emerging from the left side */}
+        
         <svg
           viewBox="0 0 1440 1440"
           className="absolute top-[10%] -left-[30%] w-[160vw] min-w-[1500px] text-[#e0dad1]/30 opacity-60 mix-blend-multiply"
@@ -83,7 +83,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
   if (variant === 'voices') {
     return (
       <div className={baseClasses}>
-        {/* A massive, soft, irregularly proportioned curve sweeping behind the testimonial */}
+        
         <svg
           viewBox="0 0 1440 1440"
           className="absolute -top-[15%] -right-[20%] w-[150vw] min-w-[1400px] text-[#dad5cc]/35 opacity-70 blur-md"
@@ -99,7 +99,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
   if (variant === 'leadership') {
     return (
       <div className={baseClasses}>
-        {/* A highly vertical, asymmetrical folded form on the right */}
+        
         <svg
           viewBox="0 0 1440 1440"
           className="absolute -top-[10%] -right-[10%] w-[110vw] min-w-[1100px] text-espresso/10 opacity-75 mix-blend-multiply"
@@ -115,7 +115,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
   if (variant === 'partnership') {
     return (
       <div className={baseClasses}>
-        {/* Two distinctly asymmetric flowing forms approaching from opposite corners */}
+        
         <svg
           viewBox="0 0 1440 1440"
           className="absolute -top-[20%] -left-[15%] w-[90vw] min-w-[900px] text-[#e6e1d8]/50 mix-blend-multiply"
@@ -139,7 +139,7 @@ export function OrganicBackground({ variant, className = '' }: { variant: Varian
   if (variant === 'contact') {
     return (
       <div className={baseClasses}>
-        {/* A massive, enveloping abstract landscape-like form spanning the bottom right */}
+        
         <svg
           viewBox="0 0 1440 1440"
           className="absolute -bottom-[30%] -right-[20%] w-[160vw] min-w-[1500px] text-espresso/15 opacity-80 mix-blend-multiply"

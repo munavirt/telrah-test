@@ -37,7 +37,7 @@ export function WhyTelrah() {
     <section id="why" className="border-t border-cream-400 bg-white py-24 sm:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-20">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-[2fr_3fr] lg:gap-24">
-          {/* Left — sticky heading */}
+          
           <Reveal>
             <div className="lg:sticky lg:top-32">
               <h2 className="font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
@@ -58,7 +58,6 @@ export function WhyTelrah() {
             </div>
           </Reveal>
 
-          {/* Right — stats grid */}
           <Reveal delay={150}>
             <div>
               <div className="grid grid-cols-2 border-l border-t border-cream-400">
@@ -69,7 +68,6 @@ export function WhyTelrah() {
                 ))}
               </div>
 
-              {/* Differentiators */}
               <ul className="mt-12 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
                 {DIFFERENTIATORS.map((item) => (
                   <li key={item} className="flex items-center gap-3">

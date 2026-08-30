@@ -10,7 +10,7 @@ export function Partnership() {
       <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-20">
         <Reveal>
           <div className="grid grid-cols-1 overflow-hidden rounded-2xl lg:grid-cols-2">
-            {/* Left — espresso background */}
+            
             <div className="flex flex-col justify-center bg-espresso p-10 sm:p-14 lg:p-16">
               <h2 className="font-serif text-3xl font-light text-white sm:text-4xl lg:text-5xl">
                 <span className="italic text-gold-500">Partner</span> With Telrah
@@ -26,7 +26,6 @@ export function Partnership() {
               </a>
             </div>
 
-            {/* Right — image */}
             <div className="relative min-h-[320px] overflow-hidden lg:min-h-full">
               <img
                 src={PARTNERSHIP_IMG}

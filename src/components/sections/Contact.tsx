@@ -24,7 +24,7 @@ export function Contact() {
   return (
     <section id="contact" className="grain-overlay bg-white py-24 sm:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 sm:px-12 lg:px-20">
-        {/* Heading */}
+        
         <Reveal className="mb-16 text-center">
           <Eyebrow withLines className="justify-center">Contact</Eyebrow>
           <h2 className="mt-6 font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
@@ -33,7 +33,7 @@ export function Contact() {
         </Reveal>
 
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
-          {/* Form */}
+          
           <Reveal>
             {submitted ? (
               <div className="flex h-full flex-col items-center justify-center rounded-xl border border-cream-400 bg-cream-100 p-12 text-center animate-scale-in">
@@ -131,7 +131,6 @@ export function Contact() {
             )}
           </Reveal>
 
-          {/* Contact details */}
           <Reveal delay={150}>
             <div className="flex h-full flex-col justify-center lg:pl-8">
               <p className="max-w-sm font-sans text-sm font-light leading-relaxed text-espresso/80">

@@ -1,9 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 
-/**
- * Adds the `is-visible` class to a `.reveal` element when it enters the viewport.
- * Supports a stagger delay and respects prefers-reduced-motion.
- */
 export function useReveal<T extends HTMLElement = HTMLDivElement>(
   options: { threshold?: number; rootMargin?: string; once?: boolean } = {}
 ) {

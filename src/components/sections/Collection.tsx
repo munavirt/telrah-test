@@ -129,14 +129,13 @@ export function Collection() {
     <section id="collection" className="relative bg-white py-24 sm:py-32 lg:py-40">
       <OrganicBackground variant="collection" />
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-12 lg:px-20">
-        {/* Heading */}
+        
         <Reveal className="mb-12 text-center">
           <h2 className="font-serif text-4xl font-light text-espresso sm:text-5xl lg:text-6xl">
             The <span className="italic text-gold-600">Collection</span>
           </h2>
         </Reveal>
 
-        {/* Filter tabs */}
         <Reveal delay={100} className="mb-16 flex flex-wrap items-center justify-center gap-3">
           {CATEGORIES.map((cat) => (
             <button
@@ -152,7 +151,6 @@ export function Collection() {
           ))}
         </Reveal>
 
-        {/* Gallery grid */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {filtered.map((product, i) => (
             <Reveal
@@ -181,7 +179,6 @@ export function Collection() {
         </div>
       </div>
 
-      {/* Lightbox */}
       {lightbox && (
         <div
           className="fixed inset-0 z-[70] flex items-center justify-center bg-espresso/80 p-6 backdrop-blur-sm animate-fade-in"
