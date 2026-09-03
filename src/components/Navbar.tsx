@@ -3,9 +3,9 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const NAV_LINKS = [
-  { label: "Collections", href: "#collections" },
-  { label: "Solutions", href: "#solutions" },
-  { label: "Why Telrah", href: "#why-telrah" },
+  { label: "Collections", href: "#collection" },
+  { label: "Solutions", href: "#standard" },
+  { label: "Why Telrah", href: "#why" },
   { label: "Partnership", href: "#partnership" },
 ];
 
